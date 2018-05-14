@@ -21,7 +21,7 @@ public class RecycleViewActivity extends AppCompatActivity {
         File sourceDirectory = getExternalFilesDir(Environment.DIRECTORY_PICTURES + "/image gallery");
 
         rvImages = (RecyclerView) findViewById(R.id.rvImages);
-        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this, 1);
+        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this, 2);
         rvImages.setLayoutManager(layoutManager);
 
         RecyclerView.Adapter imageAdapter = new ImageGalleryAdapter(sourceDirectory);
